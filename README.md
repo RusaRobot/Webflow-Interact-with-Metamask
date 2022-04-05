@@ -10,7 +10,7 @@ Connecting metamask on Webflow
 ```JS
 <script>
 // Change to custom button ID, starting with # (optional)
-window.buttonID = "#connect"
+window.buttonID = "#metabutton"
 </script>
 <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js" />
 <script type="module" src="https://buildship-dev.github.io/metamask-button-webflow/wallet.js" />
