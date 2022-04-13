@@ -11,7 +11,7 @@ export const getWalletAddress = async () => {
 export const updateMetaMaskStatus = async () => {
     const connected = isMetaMaskConnected()
     if (connected) {
-        const button = document.querySelector(window.buttonID ?? '#connect');
+        const button = document.querySelector(window.buttonID ?? '#metabutton');
         button.textContent = "Metamask connected";
     }
 }
@@ -22,4 +22,4 @@ export const connectMetaMask = async () => {
 }
 
 updateMetaMaskStatus();
-document.querySelector(window.buttonID ?? '#connect').addEventListener('click', connectMetaMask);
+document.querySelector(window.buttonID ?? '#metabutton').addEventListener('click', connectMetaMask);
