@@ -12,7 +12,7 @@ export const updateMetaMaskStatus = async () => {
     const connected = isMetaMaskConnected()
     if (connected) {
         const button = document.querySelector(window.buttonID ?? '#metabutton');
-        button.textContent = "Metamask ilang";
+        button.textContent = "Metamask capek";
         const accountsDiv = document.getElementById(window.buttonID ?? '#accounts');
         selectedAccount = ethereum.selectedAddress;
         document.querySelector("#accounts").textContent = selectedAccount;
